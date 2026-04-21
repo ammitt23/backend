@@ -1,0 +1,19 @@
+package com.skillgappro.backend.entity;
+
+import jakarta.persistence.*;
+
+@Entity
+public class StudentProfile {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private Long userId;
+
+    private String skills;
+    private String targetRole;
+    private Double cgpa;
+
+    // getters & setters
+}
